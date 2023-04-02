@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./main.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./assets/icons8-senha-1-32.png">
+    <title>Gerador de Senha</title>
+</head>
+<body>
+
+    <div class="container">
+		<h1>Gerador de senha <img class="key" src="./assets/icons8-senha-1-64.png" alt=""></h1>
+		<div class="form">
+			<label for="length">Número de dígitos:</label>
+			<input type="number" id="length" min="8" max="24" value="8">
+			<br>
+			<label for="uppercase">Incluí Letras Maiúsculas:</label>
+			<input type="checkbox" id="uppercase" checked>
+			<br>
+			<label for="lowercase">Incluí Letras Minúsculas:</label>
+			<input type="checkbox" id="lowercase" checked>
+			<br>
+			<label for="numbers">Incluí Números:</label>
+			<input type="checkbox" id="numbers" checked>
+			<br>
+			<label for="symbols">Incluí Símbolos:</label>
+			<input type="checkbox" id="symbols" checked>
+			<br>
+			<button onclick="generate()">Gerar Senha</button>
+			<br>
+			<input type="text" id="password" readonly>
+		</div>
+	</div>
+    
+    
+</body>
+</html>
+ 
